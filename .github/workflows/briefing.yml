@@ -1,0 +1,39 @@
+name: Briefing Matutino Oxiquim
+
+on:
+  schedule:
+    - cron: '0 10 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install requests
+
+      - name: Generar briefing HTML
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/generate_briefing.py
+
+      - name: Publicar en GitHub Pages
+        run: |
+          git config user.name "briefing-bot"
+          git config user.email "briefing-bot@oxiquim.cl"
+          git add index.html
+          git diff --staged --quiet || git commit -m "Briefing $(date +'%Y-%m-%d')"
+          git push
