@@ -3,22 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Briefing Matutino — Gerencia de Personas Oxiquim — 18 mar 2026</title>
+<title>Briefing Matutino — Gerencia de Personas Oxiquim — 19 de March de 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{
-  --ink:#0e0e0e;--chalk:#fff;--mist:rgba(255,255,255,.06);
-  --div:rgba(255,255,255,.1);--acc:#c8a96e;
-  --urg:#e05a4e;--str:#6b9fd4;
-  --sf:'Playfair Display',Georgia,serif;
-  --ss:'DM Sans',system-ui,sans-serif
-}
+:root{--ink:#0e0e0e;--chalk:#fff;--mist:rgba(255,255,255,.06);--div:rgba(255,255,255,.1);--acc:#c8a96e;--urg:#e05a4e;--str:#6b9fd4;--sf:'Playfair Display',Georgia,serif;--ss:'DM Sans',system-ui,sans-serif}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:16px;scroll-behavior:smooth}
 body{background:#0e0e0e;color:#fff;font-family:var(--ss);font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased}
-
-/* MASTHEAD */
 .mast{position:sticky;top:0;z-index:100;background:rgba(14,14,14,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--div)}
 .mast-in{max-width:1280px;margin:0 auto;padding:0 clamp(1rem,4vw,3rem);display:flex;align-items:center;justify-content:space-between;gap:1rem;height:60px;flex-wrap:wrap}
 .brand{display:flex;align-items:baseline;gap:10px}
@@ -32,8 +24,6 @@ body{background:#0e0e0e;color:#fff;font-family:var(--ss);font-weight:300;line-he
 .si:focus{border-color:rgba(255,255,255,.28)}
 .fs{background:var(--mist);border:1px solid var(--div);border-radius:4px;color:rgba(255,255,255,.6);font-family:var(--ss);font-size:.7rem;height:33px;padding:0 8px;cursor:pointer;outline:none}
 .fs option{background:#1a1a1a}
-
-/* HERO */
 .hero{position:relative;height:clamp(190px,26vw,310px);overflow:hidden;display:flex;align-items:flex-end}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.38) saturate(.72)}
 .hero-g{position:absolute;inset:0;background:linear-gradient(to top,rgba(14,14,14,.98) 0%,rgba(14,14,14,.12) 65%,transparent 100%)}
@@ -41,72 +31,51 @@ body{background:#0e0e0e;color:#fff;font-family:var(--ss);font-weight:300;line-he
 .ey{font-size:.6rem;font-weight:500;text-transform:uppercase;letter-spacing:.18em;color:var(--acc);margin-bottom:.35rem}
 .h1{font-family:var(--sf);font-size:clamp(1.7rem,4.5vw,3rem);font-weight:400;line-height:1.1;letter-spacing:-.01em}
 .h1 em{font-style:italic;color:var(--acc)}
-
-/* STATS */
 .stats{border-bottom:1px solid var(--div);padding:0 clamp(1rem,4vw,3rem)}
 .stats-in{max-width:1280px;margin:0 auto;display:flex;overflow-x:auto}
 .st{padding:.8rem 2rem .8rem 0;margin-right:2rem;border-right:1px solid var(--div);flex-shrink:0}
 .st:last-child{border-right:none}
 .sv{font-family:var(--sf);font-size:1.6rem;font-weight:400;line-height:1}
 .sl{font-size:.58rem;font-weight:500;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.27);margin-top:2px}
-
-/* MAIN */
 .main{max-width:1280px;margin:0 auto;padding:2.2rem clamp(1rem,4vw,3rem) 4rem}
 .sec{margin-bottom:3.2rem;animation:fu .45s ease both}
 @keyframes fu{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-.sec.hidden{display:none}
-
 .sh{display:flex;align-items:center;gap:10px;margin-bottom:1.1rem;padding-bottom:.8rem;border-bottom:1px solid var(--div)}
 .sd{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 .sn{font-family:var(--sf);font-size:.96rem;font-weight:400}
 .sc{font-size:.6rem;font-weight:500;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.26);margin-left:auto}
-
 .sph{position:relative;border-radius:5px;overflow:hidden;margin-bottom:1rem;height:clamp(90px,11vw,145px)}
 .sph img{width:100%;height:100%;object-fit:cover;filter:brightness(.36) saturate(.62);transition:transform 7s ease,filter .4s}
 .sph:hover img{transform:scale(1.05);filter:brightness(.46) saturate(.8)}
 .spl{position:absolute;bottom:10px;left:12px;font-size:.56rem;font-weight:500;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.36)}
-
-/* GRID — sin background gris, gap real */
 .ng{display:grid;gap:8px;background:transparent}
 @media(min-width:600px){.ng{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(min-width:900px){.ng{grid-template-columns:repeat(3,minmax(0,1fr))}}
-
-/* CARD */
-.nc{background:#131313;border:.5px solid rgba(255,255,255,.08);border-radius:8px;display:flex;flex-direction:column;gap:.42rem;position:relative;transition:background .18s,border-color .18s;text-decoration:none;color:inherit;cursor:pointer;overflow:hidden}
+.nc{background:#131313;border:.5px solid rgba(255,255,255,.08);border-radius:8px;display:flex;flex-direction:column;position:relative;transition:background .18s,border-color .18s;text-decoration:none;color:inherit;cursor:pointer;overflow:hidden}
 .nc:hover{background:#1c1c1c;border-color:rgba(255,255,255,.16)}
 .nc-inner{padding:1.05rem 1.15rem;display:flex;flex-direction:column;gap:.42rem;flex:1}
 .nc.u{background:rgba(224,90,78,.06);border-color:rgba(224,90,78,.2)}
 .nc.u:hover{background:rgba(224,90,78,.12);border-color:rgba(224,90,78,.35)}
 .nc.u::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--urg);opacity:.7}
 @media(min-width:600px){.nc.u{grid-column:1/-1}}
-
-/* hover arrow indicator */
 .nc::after{content:'↗';position:absolute;top:10px;right:12px;font-size:.65rem;color:rgba(255,255,255,.12);transition:color .18s,transform .18s}
 .nc:hover::after{color:var(--acc);transform:translate(2px,-2px)}
-
 .rb{display:inline-flex;align-items:center;gap:4px;font-size:.56rem;font-weight:500;text-transform:uppercase;letter-spacing:.1em;width:fit-content}
 .rb::before{content:'';width:4px;height:4px;border-radius:50%;background:currentColor;flex-shrink:0}
 .rb-u{color:var(--urg)}.rb-e{color:var(--str)}.rb-i{color:rgba(255,255,255,.27)}
-
 .nt{font-family:var(--sf);font-size:clamp(.86rem,1.2vw,.97rem);font-weight:400;line-height:1.34;padding-right:1.2rem}
 .nc.u .nt{font-size:clamp(.92rem,1.4vw,1.06rem)}
 .nb{font-size:.74rem;font-weight:300;color:rgba(255,255,255,.4);line-height:1.54;flex:1}
-.nf{display:flex;align-items:center;gap:6px;margin-top:.3rem;flex-wrap:wrap}
+.nf{display:flex;align-items:center;gap:6px;margin-top:.3rem}
 .ns{font-size:.6rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:rgba(255,255,255,.25)}
 .nc:hover .ns{color:var(--acc)}
-.nm{margin-left:auto;background:transparent;border:1px solid rgba(255,255,255,.1);border-radius:3px;color:rgba(255,255,255,.2);cursor:pointer;font-family:var(--ss);font-size:.56rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;transition:all .15s;position:relative;z-index:2}
-.nm:hover,.nm.on{border-color:var(--acc);color:var(--acc);background:rgba(200,169,110,.06)}
-
-/* FOOTER */
 footer{border-top:1px solid var(--div);padding:1.2rem clamp(1rem,4vw,3rem);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:2rem}
 .fb{font-family:var(--sf);font-size:.8rem;color:rgba(255,255,255,.18)}
 .fn{font-size:.6rem;color:rgba(255,255,255,.12)}
-
 @media(max-width:480px){.si{width:140px}.ctrl{gap:5px}}
 </style>
 </head>
 <body>
-
 <header class="mast">
   <div class="mast-in">
     <div class="brand"><span class="bn">Oxiquim</span><span class="bs">Briefing · Personas</span></div>
@@ -117,11 +86,7 @@ footer{border-top:1px solid var(--div);padding:1.2rem clamp(1rem,4vw,3rem);displ
       </div>
       <select class="fs" id="sf">
         <option value="">Todas las secciones</option>
-        <option value="laboral">Política laboral Chile</option>
-        <option value="reg">Regulación y compliance</option>
-        <option value="rrhh">Mundo RR.HH.</option>
-        <option value="ecl">Economía Chile</option>
-        <option value="eint">Economía internacional</option>
+        <option value="laboral">Política laboral Chile</option><option value="regulacion">Regulación y compliance laboral</option><option value="gestion">Gestión organizacional y liderazgo</option><option value="rrhh">Mundo RR.HH. y futuro del trabajo</option><option value="ecl">Economía Chile</option><option value="eint">Economía y negocios internacional</option>
       </select>
       <select class="fs" id="rf">
         <option value="">Toda relevancia</option>
@@ -132,343 +97,55 @@ footer{border-top:1px solid var(--div);padding:1.2rem clamp(1rem,4vw,3rem);displ
     </div>
   </div>
 </header>
-
 <section class="hero">
   <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=75&auto=format&fit=crop" alt="" loading="eager">
   <div class="hero-g"></div>
   <div class="hero-b">
-    <div class="ey">Miércoles 18 de marzo de 2026</div>
+    <div class="ey">Jueves 19 de March de 2026</div>
     <h1 class="h1">Briefing <em>matutino</em><br>Gerencia de Personas Oxiquim</h1>
   </div>
 </section>
-
 <div class="stats">
   <div class="stats-in">
     <div class="st"><div class="sv" id="stT">0</div><div class="sl">Noticias hoy</div></div>
     <div class="st"><div class="sv" id="stU">0</div><div class="sl">Urgentes</div></div>
     <div class="st"><div class="sv" id="stM">0</div><div class="sl">Marcadas</div></div>
-    <div class="st"><div class="sv" id="stS">0</div><div class="sl">Secciones</div></div>
+    <div class="st"><div class="sv">0</div><div class="sl">Secciones</div></div>
   </div>
 </div>
-
 <main class="main" id="main">
-
-<!-- ──────────────────────────────────────────────────────
-     1. POLÍTICA LABORAL CHILE
-     Noticias del 18 mar 2026 — ordenadas: Chile primero
-────────────────────────────────────────────────────── -->
-<section class="sec" data-sec="laboral" style="animation-delay:0ms">
-  <div class="sh">
-    <div class="sd" style="background:#7cad8a"></div>
-    <span class="sn">Política laboral Chile</span>
-    <span class="sc" id="ct-laboral"></span>
-  </div>
-  <div class="sph">
-    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&q=65&auto=format&fit=crop" alt="" loading="lazy">
-    <span class="spl">Legislación & Normativa</span>
-  </div>
-  <div class="ng">
-
-    <!-- CHILE PRIMERO -->
-    <a class="nc" data-sec="laboral" data-rel="Estratégico"
-       href="https://cuprum360.cl/informe-economico-semana-del-10-al-16-de-marzo-2026/" target="_blank" rel="noopener">
-      <div class="nc-inner">
-        <span class="rb rb-e">Estratégico</span>
-        <h2 class="nt">Banco Central EEE marzo: mercado desplaza recorte de TPM a mediados de año — ya no se esperaría en marzo por alza del petróleo</h2>
-        <p class="nb">La Encuesta de Expectativas Económicas publicada esta semana proyecta la TPM en 4,25% a fines de 2026. El recorte se postpone de marzo a mediados de año por la incertidumbre geopolítica y el alza del crudo. El tipo de cambio se espera en torno a $900 en dos meses.</p>
-        <div class="nf"><span class="ns">Cuprum 360 / Banco Central EEE</span></div>
-      </div>
-    </a>
-
-    <a class="nc u" data-sec="laboral" data-rel="Urgente"
-       href="https://www.bloomberglinea.com/mundo/estados-unidos/a-que-hora-habla-jerome-powell-hoy-18-de-marzo-y-que-se-espera-de-las-tasas-de-la-fed/" target="_blank" rel="noopener">
-      <div class="nc-inner">
-        <span class="rb rb-u">Urgente</span>
-        <h2 class="nt">Fed decide hoy sus tasas — impacto directo en el peso chileno y en las expectativas de política monetaria del Banco Central</h2>
-        <p class="nb">El FOMC publica su decisión a las 14:00 ET. Analistas anticipan mantención en 3,5%–3,75% por las presiones del petróleo (Brent sobre US$90). Powell habla a las 14:30. La decisión afecta el tipo de cambio y la hoja de ruta de la TPM chilena en los próximos meses.</p>
-        <div class="nf"><span class="ns">Bloomberg Línea — 18 mar 2026</span></div>
-      </div>
-    </a>
-
-  </div>
-</section>
-
-<!-- ──────────────────────────────────────────────────────
-     2. REGULACIÓN Y COMPLIANCE
-     Gestión vacía → oculta por JS
-────────────────────────────────────────────────────── -->
-<section class="sec hidden" data-sec="reg" data-empty="true" style="animation-delay:55ms">
-  <div class="sh">
-    <div class="sd" style="background:#c47d8a"></div>
-    <span class="sn">Regulación y compliance laboral</span>
-    <span class="sc" id="ct-reg"></span>
-  </div>
-  <div class="sph">
-    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=65&auto=format&fit=crop" alt="" loading="lazy">
-    <span class="spl">Compliance & OIT</span>
-  </div>
-  <div class="ng"></div>
-</section>
-
-<!-- ──────────────────────────────────────────────────────
-     3. GESTIÓN ORGANIZACIONAL Y LIDERAZGO
-     Sin noticias del día → oculta
-────────────────────────────────────────────────────── -->
-<section class="sec hidden" data-sec="gest" data-empty="true" style="animation-delay:110ms">
-  <div class="sh">
-    <div class="sd" style="background:#e0a07a"></div>
-    <span class="sn">Gestión organizacional y liderazgo</span>
-    <span class="sc" id="ct-gest"></span>
-  </div>
-  <div class="sph">
-    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=65&auto=format&fit=crop" alt="" loading="lazy">
-    <span class="spl">Liderazgo & Cultura</span>
-  </div>
-  <div class="ng"></div>
-</section>
-
-<!-- ──────────────────────────────────────────────────────
-     4. MUNDO RR.HH.
-     Noticias del 18 mar 2026 — Chile primero
-────────────────────────────────────────────────────── -->
-<section class="sec" data-sec="rrhh" style="animation-delay:165ms">
-  <div class="sh">
-    <div class="sd" style="background:#6b9fd4"></div>
-    <span class="sn">Mundo RR.HH. y futuro del trabajo</span>
-    <span class="sc" id="ct-rrhh"></span>
-  </div>
-  <div class="sph">
-    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=65&auto=format&fit=crop" alt="" loading="lazy">
-    <span class="spl">People & Talent</span>
-  </div>
-  <div class="ng">
-
-    <!-- CHILE PRIMERO -->
-    <a class="nc u" data-sec="rrhh" data-rel="Urgente"
-       href="https://www.24horas.cl/" target="_blank" rel="noopener">
-      <div class="nc-inner">
-        <span class="rb rb-u">Urgente</span>
-        <h2 class="nt">IA redefine el mercado laboral chileno hoy: nuevas profesiones, competencias y desafíos para RRHH en panel transmitido en 24horas.cl</h2>
-        <p class="nb">Panel en vivo analiza cómo la IA está transformando los modelos de negocio y los perfiles laborales en Chile. Participan ejecutivos de AWS, ACTI y ASECH. El rol de la educación técnica y la reconversión de trabajadores son los ejes del debate. Relevante para agendas de formación y upskilling.</p>
-        <div class="nf"><span class="ns">24Horas.cl — 18 mar 2026</span></div>
-      </div>
-    </a>
-
-    <a class="nc" data-sec="rrhh" data-rel="Informativo"
-       href="https://www.infobae.com/noticias/2026/03/18/chile-cotizacion-de-apertura-del-euro-hoy-18-de-marzo-de-eur-a-clp/" target="_blank" rel="noopener">
-      <div class="nc-inner">
-        <span class="rb rb-i">Informativo</span>
-        <h2 class="nt">Tipo de cambio Chile hoy: volatilidad por conflicto Medio Oriente afecta planificación de nóminas con componente en moneda extranjera</h2>
-        <p class="nb">El peso chileno enfrenta presión por el alza del dólar global y el petróleo sobre US$90. Analistas proyectan dólar en torno a $840–$900 a fines de 2026. Impacto en contratos con componente USD, expatriados y compensaciones variables en divisas extranjeras.</p>
-        <div class="nf"><span class="ns">Infobae — 18 mar 2026</span></div>
-      </div>
-    </a>
-
-  </div>
-</section>
-
-<!-- ──────────────────────────────────────────────────────
-     5. ECONOMÍA CHILE
-     Noticias del 18 mar 2026 — Chile primero
-────────────────────────────────────────────────────── -->
-<section class="sec" data-sec="ecl" style="animation-delay:220ms">
-  <div class="sh">
-    <div class="sd" style="background:#c8a96e"></div>
-    <span class="sn">Economía Chile</span>
-    <span class="sc" id="ct-ecl"></span>
-  </div>
-  <div class="sph">
-    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=65&auto=format&fit=crop" alt="" loading="lazy">
-    <span class="spl">Macroeconomía nacional</span>
-  </div>
-  <div class="ng">
-
-    <!-- CHILE PRIMERO -->
-    <a class="nc u" data-sec="ecl" data-rel="Urgente"
-       href="https://cuprum360.cl/informe-economico-semana-del-10-al-16-de-marzo-2026/" target="_blank" rel="noopener">
-      <div class="nc-inner">
-        <span class="rb rb-u">Urgente</span>
-        <h2 class="nt">Informe semanal Cuprum 360 (10–16 mar): IPC marzo proyectado en 0,5% — PIB 2026 revisado a la baja a 2,5% y TPM postergada a mediados de año</h2>
-        <p class="nb">La EEE del Banco Central muestra que el mercado rebajó la proyección de crecimiento de 2,6% a 2,5% para 2026. Las expectativas de inflación se mantienen ancladas en 3% a 11 y 23 meses. La tasa del Tesoro de EE.UU. a 10 años cerró cerca de 4,3% por el conflicto en Medio Oriente.</p>
-        <div class="nf"><span class="ns">Cuprum 360 — semana 10–16 mar 2026</span></div>
-      </div>
-    </a>
-
-    <a class="nc" data-sec="ecl" data-rel="Estratégico"
-       href="https://www.bloomberglinea.com/mundo/estados-unidos/a-que-hora-habla-jerome-powell-hoy-18-de-marzo-y-que-se-espera-de-las-tasas-de-la-fed/" target="_blank" rel="noopener">
-      <div class="nc-inner">
-        <span class="rb rb-e">Estratégico</span>
-        <h2 class="nt">Fed decide hoy — analistas: mantención en 3,5%–3,75% y Powell reconocerá mayor incertidumbre geopolítica en su discurso de las 14:30 ET</h2>
-        <p class="nb">Bloomberg Línea anticipa que Powell adoptará un enfoque de "primero no hacer daño". La decisión impacta directamente el peso chileno. El mercado chileno ya ajustó sus expectativas de TPM para el segundo semestre según la EEE del BC publicada esta semana.</p>
-        <div class="nf"><span class="ns">Bloomberg Línea — 18 mar 2026</span></div>
-      </div>
-    </a>
-
-    <a class="nc" data-sec="ecl" data-rel="Informativo"
-       href="https://www.bcentral.cl/areas/estadisticas/tasas-de-interes" target="_blank" rel="noopener">
-      <div class="nc-inner">
-        <span class="rb rb-i">Informativo</span>
-        <h2 class="nt">Banco Central Chile publica tasas bancarias de febrero: créditos comerciales suben a 8,7%, consumo a 24,1%, vivienda estable en 4,1%</h2>
-        <p class="nb">Datos de febrero: créditos comerciales 8,7% (enero: 8,4%), consumo 24,1% (enero: 23,4%), vivienda 4,1%, comercio exterior baja a 5,6%. Las tasas de consumo elevadas presionan el poder adquisitivo de los trabajadores y son un indicador relevante para bienestar financiero del personal.</p>
-        <div class="nf"><span class="ns">Banco Central de Chile</span></div>
-      </div>
-    </a>
-
-  </div>
-</section>
-
-<!-- ──────────────────────────────────────────────────────
-     6. ECONOMÍA INTERNACIONAL
-     Sin restricción de Chile primero — orden por relevancia
-────────────────────────────────────────────────────── -->
-<section class="sec" data-sec="eint" style="animation-delay:275ms">
-  <div class="sh">
-    <div class="sd" style="background:#a98bcb"></div>
-    <span class="sn">Economía y negocios internacional</span>
-    <span class="sc" id="ct-eint"></span>
-  </div>
-  <div class="sph">
-    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=65&auto=format&fit=crop" alt="" loading="lazy">
-    <span class="spl">Mercados globales</span>
-  </div>
-  <div class="ng">
-
-    <a class="nc u" data-sec="eint" data-rel="Urgente"
-       href="https://www.pressdigital.es/articulo/economia/2026-03-18/5812914-analistas-apuntan-fed-bce-mantendran-hoy-manana-tipos-interes" target="_blank" rel="noopener">
-      <div class="nc-inner">
-        <span class="rb rb-u">Urgente</span>
-        <h2 class="nt">Fed y BCE se reúnen hoy y mañana — analistas descartan recortes por petróleo sobre US$90 y presiones inflacionarias del conflicto Irán</h2>
-        <p class="nb">La Fed mantendría tasas en 3,5%–3,75% (hoy, 14:00 ET). El BCE se reúne mañana en igual escenario. DWS: "resulta difícil imaginar un escenario distinto a mantener los tipos sin cambios". BBVA Research proyecta IPC en EE.UU. subiendo al 3,5% en marzo y al 4% en primavera.</p>
-        <div class="nf"><span class="ns">Press Digital / DWS — 18 mar 2026</span></div>
-      </div>
-    </a>
-
-    <a class="nc u" data-sec="eint" data-rel="Urgente"
-       href="https://www.infobae.com/economia/2026/03/18/la-argentina-resiste-el-impacto-del-conflicto-en-medio-oriente-en-que-se-diferencia-de-otras-crisis/" target="_blank" rel="noopener">
-      <div class="nc-inner">
-        <span class="rb rb-u">Urgente</span>
-        <h2 class="nt">Mercados hoy (18 mar): WTI en US$88, petróleo retrocede 1% tras subida de 3,5% ayer — todo el mercado aguarda decisión de la Fed esta tarde</h2>
-        <p class="nb">Los mercados LATAM abren tensos. Solo el 31% de los inversores en EE.UU. espera mejora bursátil entre abril y septiembre. El dólar sigue fuerte contra las monedas emergentes. La reunión del FOMC y el dot plot de Powell definirán el tono de los mercados para las próximas semanas.</p>
-        <div class="nf"><span class="ns">Infobae — 18 mar 2026</span></div>
-      </div>
-    </a>
-
-    <a class="nc" data-sec="eint" data-rel="Estratégico"
-       href="https://cnnespanol.cnn.com/2026/03/05/economia/precios-economia-global-impacto-guerra-iran-trax" target="_blank" rel="noopener">
-      <div class="nc-inner">
-        <span class="rb rb-e">Estratégico</span>
-        <h2 class="nt">Conflicto Irán: estrecho de Ormuz bloqueado desde 28 feb — riesgo de inflación global que frenaría los recortes de tasas previstos para 2026</h2>
-        <p class="nb">El Brent acumula más del 20% de alza desde el inicio del conflicto. El FMI monitorea el impacto y señala que es "demasiado pronto" para evaluar. Una escalada mayor podría llevar el crudo a US$150 y revertir la senda de baja de tasas en todo el mundo.</p>
-        <div class="nf"><span class="ns">CNN en Español</span></div>
-      </div>
-    </a>
-
-    <a class="nc" data-sec="eint" data-rel="Informativo"
-       href="https://www.semana.com/economia/macroeconomia/articulo/tension-en-medio-oriente-podria-presionar-precios-del-petroleo-y-generar-volatilidad-global/202611/" target="_blank" rel="noopener">
-      <div class="nc-inner">
-        <span class="rb rb-i">Informativo</span>
-        <h2 class="nt">Bancolombia Radar: escalada podría llevar petróleo a US$150 — empresas industriales con alta dependencia energética deben revisar coberturas</h2>
-        <p class="nb">Una ampliación del conflicto generaría choques en el suministro global superiores al de 2022. Los bancos centrales podrían verse forzados a replantear sus recortes de tasas. Empresas industriales como Oxiquim deben evaluar su exposición a costos energéticos y de insumos derivados del petróleo.</p>
-        <div class="nf"><span class="ns">Bancolombia / Semana</span></div>
-      </div>
-    </a>
-
-  </div>
-</section>
-
+<p style="padding:2rem;color:rgba(255,255,255,.3);font-style:italic;font-family:var(--sf)">Sin noticias del día disponibles.</p>
 </main>
-
 <footer>
   <span class="fb">Briefing Matutino · Gerencia de Personas Oxiquim</span>
-  <span class="fn">Solo noticias del 18 de marzo de 2026 · Haz clic en cualquier noticia para ir a la fuente</span>
+  <span class="fn">Solo noticias del 19 de March de 2026 · Haz clic en cualquier noticia para ir a la fuente</span>
 </footer>
-
 <script>
 (function(){
-  var mk = new Set(JSON.parse(sessionStorage.getItem('ox_v3') || '[]'));
-  function save(){ sessionStorage.setItem('ox_v3', JSON.stringify([...mk])); }
-
-  var fS = '', fR = '', fQ = '';
-
-  /* ── Ocultar secciones sin noticias al iniciar ── */
-  function initSections(){
+  var fS='',fR='',fQ='';
+  function go(){
+    var q=fQ.toLowerCase(),tot=0,urg=0;
     document.querySelectorAll('.sec').forEach(function(sec){
-      var cards = sec.querySelectorAll('.nc');
-      /* Sección marcada como empty o sin cards → oculta por defecto */
-      if(sec.dataset.empty === 'true' || cards.length === 0){
-        sec.classList.add('hidden');
-      }
-    });
-  }
-
-  /* ── Contadores y marcado ── */
-  function updateStats(){
-    var tot = 0, urg = 0, secs = 0;
-    document.querySelectorAll('.sec').forEach(function(sec){
-      if(sec.classList.contains('hidden')) return;
-      var vis = 0;
+      var sid=sec.dataset.sec,vis=0;
       sec.querySelectorAll('.nc').forEach(function(c){
-        if(c.style.display !== 'none'){ vis++; tot++; if(c.dataset.rel === 'Urgente') urg++; }
+        var rel=c.dataset.rel||'';
+        var tx=(c.querySelector('.nt')||{}).textContent+' '+(c.querySelector('.nb')||{}).textContent+' '+(c.querySelector('.ns')||{}).textContent;
+        var ok=true;
+        if(fS&&sid!==fS)ok=false;
+        if(fR&&rel!==fR)ok=false;
+        if(q&&!tx.toLowerCase().includes(q))ok=false;
+        c.style.display=ok?'':'none';
+        if(ok){vis++;tot++;if(rel==='Urgente')urg++;}
       });
-      if(vis > 0) secs++;
-      /* actualiza contador de sección */
-      var id = sec.dataset.sec;
-      var ct = document.getElementById('ct-' + id);
-      if(ct) ct.textContent = vis + ' nota' + (vis !== 1 ? 's' : '');
+      sec.style.display=vis?'':'none';
     });
-    var t = document.getElementById('stT'); if(t) t.textContent = tot;
-    var u = document.getElementById('stU'); if(u) u.textContent = urg;
-    var m = document.getElementById('stM'); if(m) m.textContent = mk.size;
-    var s = document.getElementById('stS'); if(s) s.textContent = secs;
+    var t=document.getElementById('stT');if(t)t.textContent=tot;
+    var u=document.getElementById('stU');if(u)u.textContent=urg;
   }
-
-  /* ── Filtrado ── */
-  function filter(){
-    var q = fQ.toLowerCase();
-    document.querySelectorAll('.sec').forEach(function(sec){
-      if(sec.dataset.empty === 'true') return; /* siempre oculta */
-      var sid = sec.dataset.sec;
-      var vis = 0;
-      sec.querySelectorAll('.nc').forEach(function(c){
-        var rel = c.dataset.rel || '';
-        var tx = (c.querySelector('.nt')||{}).textContent + ' ' +
-                 (c.querySelector('.nb')||{}).textContent + ' ' +
-                 (c.querySelector('.ns')||{}).textContent;
-        var ok = true;
-        if(fS && sid !== fS) ok = false;
-        if(fR && rel !== fR) ok = false;
-        if(q && !tx.toLowerCase().includes(q)) ok = false;
-        c.style.display = ok ? '' : 'none';
-        if(ok) vis++;
-      });
-      /* ocultar sección si filtros la dejan sin resultados */
-      sec.classList.toggle('hidden', vis === 0);
-    });
-    updateStats();
-  }
-
-  /* ── Botón marcar (detener propagación del link) ── */
-  document.querySelectorAll('.nm').forEach(function(btn){
-    btn.addEventListener('click', function(e){
-      e.preventDefault();
-      e.stopPropagation();
-      var card = btn.closest('.nc');
-      var id = card ? card.getAttribute('href') : btn.dataset.id || '';
-      if(mk.has(id)){ mk.delete(id); btn.textContent = 'Marcar'; btn.classList.remove('on'); }
-      else { mk.add(id); btn.textContent = 'Marcada'; btn.classList.add('on'); }
-      save();
-      updateStats();
-    });
-  });
-
-  /* ── Controles ── */
-  document.getElementById('si').addEventListener('input', function(){ fQ = this.value; filter(); });
-  document.getElementById('sf').addEventListener('change', function(){ fS = this.value; filter(); });
-  document.getElementById('rf').addEventListener('change', function(){ fR = this.value; filter(); });
-
-  /* ── Init ── */
-  initSections();
-  updateStats();
+  document.getElementById('si').addEventListener('input',function(){fQ=this.value;go()});
+  document.getElementById('sf').addEventListener('change',function(){fS=this.value;go()});
+  document.getElementById('rf').addEventListener('change',function(){fR=this.value;go()});
+  go();
 })();
 </script>
 </body>
